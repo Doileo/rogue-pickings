@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-inline: 1.5rem;
 }
 
 h1,
@@ -78,6 +79,9 @@ header nav {
 header nav ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header nav ul li {
@@ -237,11 +241,15 @@ footer span {
   }
 
   header nav {
-    width: 40%;
+    width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
   }
 
   header nav ul {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+	gap: 1.5rem;
   }
 }
